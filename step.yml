@@ -14,6 +14,42 @@ deps:
   brew:
   - name: node
 inputs:
+  - platform:
+      title: Bundle platform
+      description: Specify either `ios`, or `android` as platform for the bundler.
+      value_options:
+      - "ios"
+      - "android"
+  - dev: false
+    opts:
+      title: DEV flag
+      description: Set DEV flag.
+      value_options:
+      - "true"
+      - "false"
+  - minify: false
+    opts:
+      title: Minification
+      description: Minify js bundle.
+      value_options:
+      - "true"
+      - "false"
+  - root:
+    opts:
+      title: Root
+      description: Add another root(s) to be used in bundling in this project.
+  - assetRoots:
+    opts:
+      title: Asset root directories
+      description: Specify the root directories of app assets.
+  - out:
+    opts:
+      title: Output file
+      description: Specify the output file.
+  - url:
+    opts:
+      title: Bundle file URL
+      description: Specify the bundle file URL.
   - options:
     opts:
       title: Additional options for running `react-native bundle`
