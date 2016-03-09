@@ -15,6 +15,7 @@ deps:
   - name: node
 inputs:
   - platform:
+    opts:
       title: Bundle platform
       description: Specify either `ios`, or `android` as platform for the bundler.
       is_required: true
