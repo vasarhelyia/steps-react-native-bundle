@@ -14,7 +14,7 @@ deps:
   brew:
   - name: node
 inputs:
-  - platform: ""
+  - platform: ios
     opts:
       title: Bundle platform
       description: Specify either `ios`, or `android` as platform for the bundler.
