@@ -1,9 +1,9 @@
 title: React Native bundle
 summary: Bundles your React Native app.
 description: Bundles your React Native app.
-website: https://github.com/vasarhelyia/steps-react-native-bundle
-source_code_url: https://github.com/vasarhelyia/steps-react-native-bundle
-support_url: https://github.com/vasarhelyia/steps-react-native-bundle/issues
+website: https://github.com/bitrise-io/steps-react-native-bundle
+source_code_url: https://github.com/bitrise-io/steps-react-native-bundle
+support_url: https://github.com/bitrise-io/steps-react-native-bundle/issues
 host_os_tags:
 - osx-10.10
 project_type_tags:
