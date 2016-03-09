@@ -13,6 +13,10 @@ URL=""
 
 # Input params
 
+if [[ "${dev}" == "true" ]] ; then
+	DEV='--dev'
+fi
+
 if [[ "${minify}" == "true" ]] ; then
 	MINIFY='--minify'
 fi
@@ -36,7 +40,7 @@ fi
 # Bundle
 
 react-native bundle --entry-file "$ENTRY_FILE" --platform ${platform} --bundle-output "$BUNDLE_OUTPUT" \
-  "--dev ${dev}" \
+  ${DEV} \
   ${MINIFY} \
   ${ROOT} \
   ${ASSETROOTS} \
