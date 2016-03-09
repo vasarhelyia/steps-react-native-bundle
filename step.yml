@@ -17,6 +17,7 @@ inputs:
   - platform:
       title: Bundle platform
       description: Specify either `ios`, or `android` as platform for the bundler.
+      is_required: true
       value_options:
       - "ios"
       - "android"
