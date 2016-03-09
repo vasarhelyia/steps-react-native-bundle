@@ -14,7 +14,7 @@ deps:
   brew:
   - name: node
 inputs:
-  - platform: ios
+  - platform: "ios"
     opts:
       title: Bundle platform
       description: Specify either `ios`, or `android` as platform for the bundler.
@@ -22,14 +22,14 @@ inputs:
       value_options:
       - "ios"
       - "android"
-  - dev: false
+  - dev: "false"
     opts:
       title: DEV flag
       description: Set DEV flag.
       value_options:
       - "true"
       - "false"
-  - minify: false
+  - minify: "false"
     opts:
       title: Minification
       description: Minify js bundle.
