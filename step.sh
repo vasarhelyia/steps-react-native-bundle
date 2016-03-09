@@ -5,21 +5,12 @@ set -e
 ENTRY_FILE="./index.${platform}.js"
 BUNDLE_OUTPUT="${platform}/main.jsbundle"
 
-MINIFY=""
 ROOT=""
 ASSETROOTS=""
 OUT=""
 URL=""
 
 # Input params
-
-if [[ "${dev}" == "true" ]] ; then
-	DEV='--dev'
-fi
-
-if [[ "${minify}" == "true" ]] ; then
-	MINIFY='--minify'
-fi
 
 if [ ! -z "${root}" ] ; then
     ROOT="--root ${root}"
@@ -39,10 +30,13 @@ fi
 
 # Bundle
 
-react-native bundle --entry-file "$ENTRY_FILE" --platform ${platform} --bundle-output "$BUNDLE_OUTPUT" \
-  ${DEV} \
-  ${MINIFY} \
+set -x
+
+react-native bundle --entry-file "${ENTRY_FILE}" --platform ${platform} --bundle-output "${BUNDLE_OUTPUT}" \
+  --dev ${dev} \
+  --minify ${minify} \
   ${ROOT} \
   ${ASSETROOTS} \
   ${OUT} \
-  ${URL}
+  ${URL} \
+  ${options}
