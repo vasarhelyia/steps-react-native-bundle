@@ -44,6 +44,10 @@ inputs:
     opts:
       title: Asset root directories
       description: Specify the root directories of app assets.
+  - entryFile:
+    opts:
+      title: Entry file
+      description: Specify the entry file.
   - out:
     opts:
       title: Output file
