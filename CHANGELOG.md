@@ -1,6 +1,11 @@
-## Changelog (Current version: 0.1.1)
+## Changelog (Current version: 0.1.2)
 
 -----------------
+
+### 0.1.2 (2016 Jun 23)
+
+* [3b710d8] prepare for v0.1.2
+* [1fcfe6f] input renamed: entryFile to entry_file
 
 ### 0.1.1 (2016 Jun 23)
 
