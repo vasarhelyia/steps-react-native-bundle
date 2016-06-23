@@ -12,8 +12,8 @@ URL=""
 
 # Input params
 
-if [ ! -z "${entryFile}" ] ; then
-    ENTRY_FILE="${entryFile}"
+if [ ! -z "${entry_file}" ] ; then
+    ENTRY_FILE="${entry_file}"
 fi
 
 if [ ! -z "${root}" ] ; then
