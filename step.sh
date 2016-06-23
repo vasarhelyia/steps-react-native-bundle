@@ -12,6 +12,10 @@ URL=""
 
 # Input params
 
+if [ ! -z "${entryFile}" ] ; then
+    ENTRY_FILE="${entryFile}"
+fi
+
 if [ ! -z "${root}" ] ; then
     ROOT="--root ${root}"
 fi
