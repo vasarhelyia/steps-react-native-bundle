@@ -29,13 +29,6 @@ inputs:
       value_options:
       - "true"
       - "false"
-  - minify: "false"
-    opts:
-      title: Minification
-      description: Minify js bundle.
-      value_options:
-      - "true"
-      - "false"
   - root:
     opts:
       title: Root

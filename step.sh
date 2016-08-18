@@ -38,7 +38,6 @@ set -x
 
 react-native bundle --entry-file "${ENTRY_FILE}" --platform ${platform} --bundle-output "${BUNDLE_OUTPUT}" \
   --dev ${dev} \
-  --minify ${minify} \
   ${ROOT} \
   ${ASSETROOTS} \
   ${OUT} \
