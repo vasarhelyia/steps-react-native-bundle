@@ -9,7 +9,6 @@ workflows:
     - path::./:
         inputs:
         #  - platform: ios
-        #  - minify: true
 
   # ----------------------------------------------------------------
   # --- workflows to create Release
