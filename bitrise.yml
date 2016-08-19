@@ -1,6 +1,10 @@
 format_version: 1.1.0
 default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
 
+app:
+  envs:
+  - STEP_VERSION: 0.1.2
+
 workflows:
   # ----------------------------------------------------------------
   # --- workflow to Step Test
@@ -14,7 +18,7 @@ workflows:
   # --- workflows to create Release
   create-release-version:
     envs:
-    - RELEASE_VERSION: 0.1.2
+    - RELEASE_VERSION: $STEP_VERSION
     steps:
     - script:
         title:
@@ -33,7 +37,7 @@ workflows:
       # if you want to share this step into a StepLib
       - MY_STEPLIB_REPO_FORK_GIT_URL: $MY_STEPLIB_REPO_FORK_GIT_URL
       - STEP_ID_IN_STEPLIB: react-native-bundle
-      - STEP_GIT_VERION_TAG_TO_SHARE: 0.1.2
+      - STEP_GIT_VERION_TAG_TO_SHARE: $STEP_VERSION
       - STEP_GIT_CLONE_URL: https://github.com/bitrise-steplib/steps-react-native-bundle.git
     description: |-
       If this is the first time you try to share a Step you should
