@@ -7,7 +7,6 @@ BUNDLE_OUTPUT="${platform}/main.jsbundle"
 
 ROOT=""
 ASSETROOTS=""
-OUT=""
 URL=""
 
 # Input params
@@ -25,7 +24,7 @@ if [ ! -z "${assetRoots}" ] ; then
 fi
 
 if [ ! -z "${out}" ] ; then
-    OUT="--out ${out}"
+    BUNDLE_OUTPUT="${out}" 
 fi
 
 if [ ! -z "${url}" ] ; then
@@ -40,6 +39,5 @@ react-native bundle --entry-file "${ENTRY_FILE}" --platform ${platform} --bundle
   --dev ${dev} \
   ${ROOT} \
   ${ASSETROOTS} \
-  ${OUT} \
   ${URL} \
   ${options}
