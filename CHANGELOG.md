@@ -1,6 +1,13 @@
-## Changelog (Current version: 0.2.0)
+## Changelog (Current version: 1.0.0)
 
 -----------------
+
+### 1.0.0 (2016 Sep 01)
+
+* [b522561] gitignore update
+* [834330d] version number 1.0.0
+* [1f5e432] Merge pull request #6 from bitrise-steplib/bundle-output
+* [b1a9f29] use bundle-output flag intead of out
 
 ### 0.2.0 (2016 Aug 19)
 
@@ -25,4 +32,4 @@
 
 -----------------
 
-Updated: 2016 Aug 19
+Updated: 2016 Sep 01
