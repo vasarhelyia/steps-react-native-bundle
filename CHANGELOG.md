@@ -1,6 +1,11 @@
-## Changelog (Current version: 1.0.0)
+## Changelog (Current version: 1.0.1)
 
 -----------------
+
+### 1.0.1 (2016 Sep 06)
+
+* [5bb98ee] prepare for 1.0.1
+* [310febc] react-native options review (#8)
 
 ### 1.0.0 (2016 Sep 01)
 
@@ -32,4 +37,4 @@
 
 -----------------
 
-Updated: 2016 Sep 01
+Updated: 2016 Sep 06
