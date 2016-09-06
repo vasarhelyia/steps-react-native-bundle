@@ -22,36 +22,45 @@ inputs:
       value_options:
       - "ios"
       - "android"
-  - dev: "false"
+  - entry_file: "index.${platform}.js"
+    opts:
+      title: Entry file
+      description: Path to the root JS file, either absolute or relative to JS root.
+      is_required: true
+  - out: "${platform}/main.jsbundle"
+    opts:
+      title: Bundle output
+      description: |-
+        File name where to store the resulting bundle, ex. /tmp/groups.bundle.
+  - dev: "true"
     opts:
       title: DEV flag
-      description: Set DEV flag.
+      description: If false, warnings are disabled and the bundle is minified.
       value_options:
       - "true"
       - "false"
-  - root:
-    opts:
-      title: Root
-      description: Add another root(s) to be used in bundling in this project.
   - assetRoots:
     opts:
-      title: Asset root directories
-      description: Specify the root directories of app assets.
-  - entry_file:
-    opts:
-      title: Entry file
-      description: Specify the entry file.
-  - out:
-    opts:
-      title: Output file
-      description: Specify the output file.
-  - url:
-    opts:
-      title: Bundle file URL
-      description: Specify the bundle file URL.
+      title: Assets Destination
+      description: |-
+        Directory name where to store assets referenced in the bundle.
   - options:
     opts:
       title: Additional options for running `react-native bundle`
       description: |-
         Options are added to `react-native bundle`. You can use multiple options, separated
         by a space character.
+  - url:
+    opts:
+      title: "[DEPRECATED] Bundle file URL"
+      description: |-
+        __DEPRECATED__, removed from react-native tool.
+
+        Specify the bundle file URL.
+  - root:
+    opts:
+      title: "[DEPRECATED] Root"
+      description: |-
+        __DEPRECATED__, removed from react-native tool.
+
+        Add another root(s) to be used in bundling in this project.

@@ -20,8 +20,9 @@ workflows:
         - path: $SAMPLE_APP_PATH
     - path::./:
         inputs:
-        # - out: ios/main.jsbundle
-        #  - platform: ios
+        - assetRoots: ./assets
+        - options: --reset-cache
+
   ci:
     steps:
     - script:
@@ -53,6 +54,9 @@ workflows:
         inputs:
         - command: install
     - path::./:
+        inputs:
+        - assetRoots: ./assets
+        - options: --reset-cache
 
   # ----------------------------------------------------------------
   # --- workflows to create Release
