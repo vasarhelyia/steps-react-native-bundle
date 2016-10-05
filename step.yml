@@ -50,6 +50,12 @@ inputs:
       description: |-
         Options are added to `react-native bundle`. You can use multiple options, separated
         by a space character.
+  - working_dir:
+    opts:
+      title: Working directory
+      description: |-
+        Working directory of the step. Defaults to the root of the repository.
+      is_required: true
   - url:
     opts:
       title: "[DEPRECATED] Bundle file URL"

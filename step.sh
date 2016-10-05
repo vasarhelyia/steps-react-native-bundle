@@ -86,13 +86,11 @@ echo_details "* bundle_output: $out"
 echo_details "* dev: $dev"
 echo_details "* assets_dest: $assetRoots"
 echo_details "* options: $options"
+echo_details "* working_dir: $working_dir"
 
 echo_info "Deprecated Configs:"
 echo_details "* root: $root"
 echo_details "* url: $url"
-
-echo_info "react-native version:"
-react-native --version
 
 echo
 
@@ -103,6 +101,19 @@ values=("ios"  "android")
 validate_required_input_with_options "platform" $platform "${values[@]}"
 validate_required_input "entry_file" $entry_file
 validate_required_input "bundle_output" $bundle_output
+validate_required_input "working_dir" $working_dir
+
+cd $working_dir
+if [ ! -z "${working_dir}" ] ; then
+  echo "==> Switching to working directory: ${working_dir}"
+  cd "${working_dir}"
+  if [ $? -ne 0 ] ; then
+    echo " [!] Failed to switch to working directory: ${working_dir}"
+    exit 1
+  fi
+fi
+echo_info "react-native version:"
+react-native --version
 
 if [ ! -z "${root}" ] ; then
 	echo_warn "root input is deprecated and removed from react-native bundle flags"
