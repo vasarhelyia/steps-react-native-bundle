@@ -60,7 +60,7 @@ workflows:
 
   # ----------------------------------------------------------------
   # --- workflows to create Release
-  create-release-version:
+  create-release:
     envs:
     - RELEASE_VERSION: $STEP_VERSION
     steps:
