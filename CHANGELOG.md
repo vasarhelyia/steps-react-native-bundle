@@ -1,6 +1,11 @@
-## Changelog (Current version: 1.0.1)
+## Changelog (Current version: 1.0.2)
 
 -----------------
+
+### 1.0.2 (2016 Dec 16)
+
+* [e08057c] create-release-version -> create-release
+* [1fcfdfc] ios, android project type tags, bitrise.yml update (#10)
 
 ### 1.0.1 (2016 Sep 06)
 
@@ -37,4 +42,4 @@
 
 -----------------
 
-Updated: 2016 Sep 06
+Updated: 2016 Dec 16
