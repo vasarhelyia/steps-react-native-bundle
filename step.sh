@@ -126,7 +126,7 @@ fi
 
 BUNDLE_OUTPUT_OPTION=""
 if [ ! -z "${bundle_output}" ] ; then
-    mkdir -p $(dirname "${bundle_output}")
+    mkdir -p "$(dirname "${bundle_output}")"
     BUNDLE_OUTPUT_OPTION="--bundle-output ${bundle_output}"
 fi
 
