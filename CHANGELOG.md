@@ -1,6 +1,13 @@
-## Changelog (Current version: 1.0.2)
+## Changelog (Current version: 1.0.3)
 
 -----------------
+
+### 1.0.3 (2017 Mar 09)
+
+* [8e9f28a] Prepare for 1.0.3
+* [83d9531] Merge pull request #12 from trapacska/master
+* [6156d4c] Escaping path
+* [dd9b16c] Create output dir
 
 ### 1.0.2 (2016 Dec 16)
 
@@ -42,4 +49,4 @@
 
 -----------------
 
-Updated: 2016 Dec 16
+Updated: 2017 Mar 09
