@@ -11,7 +11,7 @@ project_type_tags:
 - android
 - ios
 type_tags:
-- react-native
+- build
 deps:
   brew:
   - name: node
