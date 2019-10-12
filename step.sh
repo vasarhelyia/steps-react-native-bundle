@@ -92,9 +92,9 @@ echo_details "* root: $root"
 echo_details "* url: $url"
 
 echo_info "react-native version:"
-react-native --version
+echo react-native --version
 
-echo
+
 
 bundle_output="${out}"
 assets_dest="${assetRoots}"
